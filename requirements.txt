@@ -1,0 +1,8 @@
+matplotlib
+tensorflow_hub
+tensorflow
+tensorflow.keras
+pandas
+sklearn
+streamlit
+sklearn
