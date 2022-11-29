@@ -24,7 +24,7 @@ def main():
         st.write(figure)
         
 def predict_class(image):
-    classifier_model= tf.keras.models.load_model(r'/content/drive/MyDrive/code/model_save/my_model13.hdf5')
+    classifier_model= tf.keras.models.load_model(r'/content/drive/MyDrive/code/model_save/my_model1.hdf5')
     shape=((128,128,3))
     model= tf.keras.Sequential([hub.KerasLayer(classifier_model,input_shape=shape)])
     test_image=image.resize((128,128))
