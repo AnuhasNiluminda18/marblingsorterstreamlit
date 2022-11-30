@@ -1,4 +1,4 @@
-h5py>3.1.0
+h5py==3.1.0
 matplotlib>3.2.2
 numpy==1.21.6
 Pillow==9.3.0
