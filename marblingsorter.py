@@ -5,13 +5,24 @@ import streamlit as st
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-  model=tf.keras.models.load_model('/content/drive/MyDrive/my_model1.hdf5',compile=False)
+  save_dest = Path('model')
+  save_dest.mkdir(exist_ok=True)
+    
+  f_checkpoint = Path("model/content/drive/MyDrive/code/model_save/my_model1.hdf5")
+
+  if not f_checkpoint.exists():
+      with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
+           from GD_download import download_file_from_google_drive
+           download_file_from_google_drive(cloud_model_location, f_checkpoint)
+    
+  model = torch.load(f_checkpoint, map_location=device)
+  model.eval()
   return model
 with st.spinner('Model is being loaded..'):
-  model=load_model()
+model=load_model()
 
 st.write("""
-         # Flower Classification
+         # Beef marbling Classification
          """
          )
 
