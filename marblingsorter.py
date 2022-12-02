@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 import streamlit as st
 from pathlib import Path
-import GD_download
+
 
 
 @st.cache(allow_output_mutation=True)
