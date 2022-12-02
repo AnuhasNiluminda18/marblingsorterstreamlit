@@ -12,10 +12,9 @@ def load_model():
     
   f_checkpoint = Path("model/content/drive/MyDrive/code/model_save/my_model1.hdf5")
 
-  if not f_checkpoint.exists():
-      with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
-      from GD_download import download_file_from_google_drive
-      download_file_from_google_drive(cloud_model_location, f_checkpoint)
+  # with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
+        # from GD_download import download_file_from_google_drive
+         #download_file_from_google_drive(cloud_model_location, f_checkpoint)
     
   model = torch.load(f_checkpoint, map_location=device)
   model.eval()
