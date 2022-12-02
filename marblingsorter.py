@@ -19,7 +19,7 @@ def load_model():
   model.eval()
   return model
 with st.spinner('Model is being loaded..'):
-model=load_model()
+  model=load_model()
 
 st.write("""
          # Beef marbling Classification
