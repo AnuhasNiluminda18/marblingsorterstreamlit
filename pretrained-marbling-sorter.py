@@ -50,7 +50,7 @@ else:
     #st.write(score)
     pred_class=class_names[np.argmax(predictions)]
     st.write("Predicted Class:",pred_class)
-    st.write("Place your feedback here[link](https://docs.google.com/forms/d/e/1FAIpQLSez6MK1CuUisH-j1rBjx1Bpoe1JwgA1bAIlV5MMD1rmbkJ1Bg/viewform?usp=sf_link)")
+    st.write("Place your feedback here [link](https://docs.google.com/forms/d/e/1FAIpQLSez6MK1CuUisH-j1rBjx1Bpoe1JwgA1bAIlV5MMD1rmbkJ1Bg/viewform?usp=sf_link)")
     print(
     #"This image most likely belongs to {} with a {:.2f} percent confidence.".format(class_names[np.argmax(score)], 100 * np.max(score))
 )
