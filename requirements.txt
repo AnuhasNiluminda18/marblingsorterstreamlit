@@ -6,3 +6,5 @@ streamlit==1.15.2
 tensorflow==2.9.2
 tensorflow_hub==0.12.0
 opencv-python-headless==4.5.1.48
+streamlit_option_menu
+qrcode
