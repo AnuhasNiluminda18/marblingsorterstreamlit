@@ -116,3 +116,5 @@ if choose == "More About Beef Marbling":
         st.markdown(link, unsafe_allow_html=True)
         link = '[Your steak Guide- extended version of beef marbling guide](https://www.yoursteakguide.com/grades-of-beef-marbling-explained/)'
         st.markdown(link, unsafe_allow_html=True)
+        link = '[You can share Your Web App here by using Share.Streamlit'](https://share.streamlit.io/)'
+        st.markdown(link, unsafe_allow_html=True)
