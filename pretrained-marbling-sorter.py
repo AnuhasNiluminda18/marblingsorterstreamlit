@@ -114,5 +114,5 @@ if choose == "More About Beef Marbling":
         st.markdown(link, unsafe_allow_html=True)
         link = '[Different Type of classifiaction on beef marbling](https://www.steaksandgame.com/wagyu-beef-grading-and-marble-scores-15658)'
         st.markdown(link, unsafe_allow_html=True)
-        link = '[Your steak Guide- extended version of beef marbling guide](https://www.yoursteakguide.com/grades-of-beef-marbling-explained/)'
+        link = '[Your steak Guide- extended version of beef marbling guide](https://www.yoursteakguide.com/grades-of-beef-marbling-explained)'
         st.markdown(link, unsafe_allow_html=True)
