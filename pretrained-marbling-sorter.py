@@ -52,7 +52,7 @@ if choose == "About":
 if choose == "Beef Marbling Sorter":
     @st.cache(allow_output_mutation=True)
     def load_model():
-        picklefile = open("emp-model.pkl", "rb")
+        picklefile = open("mymodelTransfer.pkl", "rb")
         model = pickle.load(picklefile)
         return model
 
