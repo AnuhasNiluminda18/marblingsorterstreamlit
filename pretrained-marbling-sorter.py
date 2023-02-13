@@ -45,7 +45,7 @@ if choose == "About":
         image = Image.open('Screenshot (133).png')
         st.image(image, caption='Predictions')
     #st.image(profile, width=700 )
-        image = Image.open('frame(1).png')
+        image = Image.open('frame (1).png')
         st.image(image, caption='Scan and share')
   
 
